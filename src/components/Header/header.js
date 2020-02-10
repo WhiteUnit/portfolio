@@ -5,7 +5,6 @@ import Container from "../container"
 
 const StyledHeader = styled.header`
   padding: 20px 0;
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;

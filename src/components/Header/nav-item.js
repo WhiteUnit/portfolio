@@ -13,7 +13,7 @@ const StyledA = styled.a`
     font-size: 18pt;
     line-height: 46pt;
     font-weight: 300;
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
 `;

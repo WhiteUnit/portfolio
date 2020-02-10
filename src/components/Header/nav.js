@@ -27,12 +27,16 @@ const StyledUl = styled.ul`
     margin: 0;
 `;
 
+const StyledNav = styled.nav`
+  position: fixed !important;
+`;
+
 const Nav = () => (
-    <nav>
+    <StyledNav>
       <StyledUl> 
         {menuElements.map(menuElement => <NavItem {...menuElement}/>)}
       </StyledUl>
-    </nav>
+    </StyledNav>
 )
 
 export default Nav;

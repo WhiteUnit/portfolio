@@ -1,10 +1,10 @@
 import React from "react"
-import Container from "../components/container"
 import Header from "../components/Header/header"
-
+import Container from "../components/container"
+import Particle from "../components/particles"
 export default () => (
-    <Container>
+    <div>
     <Header/>
-    <div>Hello world!</div>
-    </Container>
+    <Particle/>
+    </div>
 )
