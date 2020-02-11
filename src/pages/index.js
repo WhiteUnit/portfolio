@@ -5,12 +5,13 @@ import Particle from "../components/particles"
 import Layout from "../components/layout"
 import Container from "../components/container"
 import About from "../components/about"
+import Footer from "../components/footer"
 
 export default () => (
     <Layout>
-    <Particle/>
+    <Particle heigthValue="100vh"/>
     <Header/>
-    <About>Opis siebie</About>
+    <About id="about">Opis siebie</About>
     <ContainerFluid>
         <div>Opis skili</div>
         <img/>
@@ -21,5 +22,6 @@ export default () => (
     <Container>
         Kontakt
     </Container>
+    <Footer/>
     </Layout>
 )

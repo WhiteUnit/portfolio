@@ -1,19 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import Particles from "react-particles-js";
+import scrollTo from 'gatsby-plugin-smoothscroll';
+import { Link } from "gatsby";
 
 const ParticleContainer = styled.div`
   position: relative;
 `
 
 const AboutStyled = styled.ul`
-  width: 100%;
+  padding: 0;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 45%;
+  top: 35%;
 `
 const AboutLiStyled = styled.li`
     display: flex;
@@ -21,11 +23,11 @@ const AboutLiStyled = styled.li`
     color: white;
 `
 
-const Particle = () => (
+const Particle = ({heigthValue}) => (
   <ParticleContainer>
     <Particles 
         width="100%"
-        height="100vh" 
+        height={heigthValue}
         params={{
         "particles": {
           "number": {
@@ -148,10 +150,13 @@ const Particle = () => (
     />
   <AboutStyled>
     <AboutLiStyled>
+        <h5>Jestem Front-end developerem</h5>
+    </AboutLiStyled>
+    <AboutLiStyled>
       <h2>Nazywam się Filip Łasica</h2>
     </AboutLiStyled>
     <AboutLiStyled>
-        <h5>Jestem Front-end developerem</h5>
+    <Link to="/#about">Scroll To My Cool Header</Link>
     </AboutLiStyled>
 
   </AboutStyled>
