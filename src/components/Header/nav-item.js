@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components"
 
 const StyledLi = styled.li`
-    margin-right: 70px;
+    margin-right: 90px;
     &:last-child {
         margin-right: 0;
     }
@@ -16,6 +16,11 @@ const StyledA = styled.a`
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 10px 20px;
+    &:hover{
+        background-color: rgba(255, 0, 0, 0.2);;
+        border-radius: 5px;
+    }
 `;
 
 const NavItem = ({target, text}) => (

@@ -21,6 +21,7 @@ const menuElements = [{
 
 const StyledUl = styled.ul`
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     list-style-type: none;
     padding: 0;

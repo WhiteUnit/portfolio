@@ -1,9 +1,28 @@
 import React from "react";
 import styled from "styled-components";
-
 import Particles from "react-particles-js";
 
-const Particle = ({ siteTitle }) => (
+const ParticleContainer = styled.div`
+  position: relative;
+`
+
+const AboutStyled = styled.ul`
+  width: 100%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 45%;
+`
+const AboutLiStyled = styled.li`
+    display: flex;
+    justify-content: center;
+    color: white;
+`
+
+const Particle = () => (
+  <ParticleContainer>
     <Particles 
         width="100%"
         height="100vh" 
@@ -119,14 +138,26 @@ const Particle = ({ siteTitle }) => (
       }}
       style={{
         "backgroundColor":"#000000",
-        "position":"fixed",
-        "z-index":"-1 !important",
+        "position":"static",
+        "zIndex":"-1 !important",
         "top": "0",
         "left": "0",
         "width": "100%",
         "height": "100%"
       }}
     />
+  <AboutStyled>
+    <AboutLiStyled>
+      <h2>Nazywam się Filip Łasica</h2>
+    </AboutLiStyled>
+    <AboutLiStyled>
+        <h5>Jestem Front-end developerem</h5>
+    </AboutLiStyled>
+
+  </AboutStyled>
+
+
+  </ParticleContainer>
 );
 
 export default Particle;
