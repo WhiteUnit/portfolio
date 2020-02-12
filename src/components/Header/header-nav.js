@@ -4,17 +4,15 @@ import Nav from "./nav"
 import Container from "../container"
 
 const StyledHeader = styled.header`
-  position: absolute;
-  top: 0%;
-  left: 10%;
-  padding: 0px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
+  padding: 0px;
   background: #ffffff;
 `;
 
 
-const Header = () => (
+const HeaderNav = () => (
   <Container>
     <StyledHeader>
       <Nav/>
@@ -22,4 +20,4 @@ const Header = () => (
   </Container>
 ) 
 
-export default Header
+export default HeaderNav

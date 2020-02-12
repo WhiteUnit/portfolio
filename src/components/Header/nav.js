@@ -4,15 +4,15 @@ import NavItem from "./nav-item"
 
 const menuElements = [{
     text: 'O mnie',
-    target: '#about'
-  },{
-    text: 'Doświadczenie',
-    target: '#experience'
-  },{
-    text: 'Galeria',
-    target: '#gallery'
+    target: '/about-me'
   },{
     text: 'Umiejętności',
+    target: '#experience'
+  },{
+    text: 'Technologie',
+    target: '#gallery'
+  },{
+    text: 'Hobby',
     target: '#skills'
   },{
     text: 'Kontakt',
@@ -22,6 +22,7 @@ const menuElements = [{
 const StyledUl = styled.ul`
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     list-style-type: none;
     padding: 0;
@@ -29,7 +30,8 @@ const StyledUl = styled.ul`
 `;
 
 const StyledNav = styled.nav`
-  position: fixed !important;
+  position: absolute;
+  top: 50%;
 `;
 
 const Nav = () => (

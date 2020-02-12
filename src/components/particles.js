@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Particles from "react-particles-js";
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { Link } from "gatsby";
+import HeaderNav from "../components/Header/header-nav"
 
 const ParticleContainer = styled.div`
   position: relative;
@@ -15,12 +16,13 @@ const AboutStyled = styled.ul`
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 35%;
+  top: 30%;
 `
 const AboutLiStyled = styled.li`
     display: flex;
     justify-content: center;
-    color: white;
+    color: #000000;
+    align-text: center;
 `
 
 const Particle = ({heigthValue}) => (
@@ -38,7 +40,7 @@ const Particle = ({heigthValue}) => (
             }
           },
           "color": {
-            "value": "#ecd018"
+            "value": "#92000a"
           },
           "shape": {
             "type": "circle",
@@ -77,14 +79,14 @@ const Particle = ({heigthValue}) => (
           },
           "line_linked": {
             "enable": true,
-            "distance": 100,
-            "color": "#e2d018",
+            "distance": 150,
+            "color": "#92000a",
             "opacity": 0.4,
             "width": 1
           },
           "move": {
             "enable": true,
-            "speed": 5,
+            "speed": 4,
             "direction": "none",
             "random": false,
             "straight": false,
@@ -125,7 +127,7 @@ const Particle = ({heigthValue}) => (
               "speed": 3
             },
             "repulse": {
-              "distance": 200,
+              "distance": 300,
               "duration": 0.4
             },
             "push": {
@@ -139,7 +141,7 @@ const Particle = ({heigthValue}) => (
         "retina_detect": true
       }}
       style={{
-        "backgroundColor":"#000000",
+        "backgroundColor":"#ffffff",
         "position":"static",
         "zIndex":"-1 !important",
         "top": "0",
@@ -150,15 +152,12 @@ const Particle = ({heigthValue}) => (
     />
   <AboutStyled>
     <AboutLiStyled>
-        <h5>Jestem Front-end developerem</h5>
+      <h2>Filip Łasica</h2>
     </AboutLiStyled>
     <AboutLiStyled>
-      <h2>Nazywam się Filip Łasica</h2>
+        <h5>Frontend Developer</h5>
     </AboutLiStyled>
-    <AboutLiStyled>
-    <Link to="/#about">Scroll To My Cool Header</Link>
-    </AboutLiStyled>
-
+    <HeaderNav/>
   </AboutStyled>
 
 

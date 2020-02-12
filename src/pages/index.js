@@ -1,5 +1,5 @@
 import React from "react"
-import Header from "../components/Header/header"
+import HeaderNav from "../components/Header/header-nav"
 import ContainerFluid from "../components/container-fluid"
 import Particle from "../components/particles"
 import Layout from "../components/layout"
@@ -9,19 +9,6 @@ import Footer from "../components/footer"
 
 export default () => (
     <Layout>
-    <Particle heigthValue="100vh"/>
-    <Header/>
-    <About id="about">Opis siebie</About>
-    <ContainerFluid>
-        <div>Opis skili</div>
-        <img/>
-    </ContainerFluid>
-    <Container>
-        Dodatkowe zdolności zainteresowania
-    </Container>
-    <Container>
-        Kontakt
-    </Container>
-    <Footer/>
+    <Particle heigthValue="99vh"/>
     </Layout>
 )

@@ -5,6 +5,6 @@
  */
 
 module.exports = {
-
+  plugins: [`gatsby-plugin-smoothscroll`]
   /* Your site config here */
 }
