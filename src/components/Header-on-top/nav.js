@@ -33,8 +33,6 @@ const StyledUl = styled.ul`
 `;
 
 const StyledNav = styled.nav`
-  position: absolute;
-  top: 50%;
 `;
 
 const Nav = () => (
